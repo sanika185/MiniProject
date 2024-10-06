@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Salary Management System</h1>
+        <div class="input-section">
+            <h2>Add Salary</h2>
+            <input type="number" id="salaryInput" placeholder="Enter salary amount" />
+            <button onclick="addSalary()">Add Salary</button>
+        </div>
+
+        <div class="input-section">
+            <h2>Add Expense</h2>
+            <input type="number" id="expenseInput" placeholder="Enter expense amount" />
+            <input type="text" id="categoryInput" placeholder="Enter expense category" />
+            <button onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <div class="balance-section">
+            <h2>Current Balance</h2>
+            <p><strong>Salary:</strong> <span id="salaryDisplay">0</span></p>
+            <p><strong>Total Expenses:</strong> <span id="expensesDisplay">0</span></p>
+            <p><strong>Savings:</strong> <span id="savingsDisplay">0</span></p>
+            <button onclick="viewBalance()">View Balance</button>
+        </div>
+
+        <div class="history-section">
+            <h2>Salary and Expense History</h2>
+            <ul id="historyList"></ul>
+            <button onclick="viewHistory()">View Salary History</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
